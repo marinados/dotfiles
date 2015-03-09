@@ -48,3 +48,6 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+[user]
+	email = marina.starkova@gmail.com
+	name = marina starkova
