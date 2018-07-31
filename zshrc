@@ -22,7 +22,7 @@ unsetopt correct_all
 # To use Homebrew's directories rather than ~/.rbenv
 export RBENV_ROOT=$HOME/.rbenv
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="./bin:${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${PATH}"
+# export PATH="./bin:${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${PATH}"
 
 # Gather handy aliases
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -38,3 +38,7 @@ export LC_ALL=en_US.UTF-8
 export DISABLE_SPRING=true
 
 export PATH=/Users/marina/.tomato/bin:./bin:/Users/marina/.rbenv/shims:/Users/marina/.rbenv/bin:/usr/local/bin:/usr/local/share:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/X11/bin:/usr/texbin:~/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
