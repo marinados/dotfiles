@@ -4,6 +4,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 alias tt="bundle exec rspec"
 alias gd="git pull origin develop"
+alias gm="git pull origin master"
 alias go="git pull origin"
 alias gcm="git commit -m"
 alias gc="git commit"
@@ -12,4 +13,4 @@ alias giff="git diff"
 alias gu="git push origin"
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
-alias ll="git log --pretty=format:"%ad, %s" --date=short"
+alias llog="git log --pretty=format:"%ad, %s" --date=short"
